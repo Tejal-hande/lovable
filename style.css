@@ -128,3 +128,27 @@ button {
 }
 
 /* -----------------------------header completed ------------------------------------ */
+main
+{
+    background-color: #1c1c1c;
+    position: relative;
+    /* z-index we want image on this so image index priority is less  */
+    z-index: 999;
+    height: 100vh;
+    /* border: 2px solid red; */
+    /* overflow -> image dont go beyond screen or overflows */
+    overflow: hidden;
+}
+main img
+{
+
+  width: 100%;
+  position: absolute;
+  z-index: -999;
+  top: 0;
+  scale: 2;
+}
+.box
+{
+  height: 100vh;
+}
