@@ -156,7 +156,7 @@ main img
 }
 .main-content
 {
-  padding-top: 20vh;
+  padding-top: 1vh;
   text-align: center;
 }
 .main-content h1
@@ -168,7 +168,7 @@ main img
 }
 .main-content p
 {
-  font-weight: bold;
+  font-weight: 700;
   color: #fcfbf8a6;
   font-size: 18px;
 }
@@ -293,7 +293,7 @@ main img
 }
 .extra-options i
 {
-  height: 32px;
+   height: 32px;
     width: 32px;
     border-radius: 50%;
     display:flex;
@@ -308,11 +308,6 @@ main img
 {
   background-color: #4a4a49;
 }
-.input-container input:focus
-{
- 
-}
-
 .box
 {
   height: 100vh;
