@@ -138,6 +138,12 @@ main
     /* border: 2px solid red; */
     /* overflow -> image dont go beyond screen or overflows */
     overflow: hidden;
+    padding-top: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 main img
 {
@@ -148,6 +154,165 @@ main img
   top: 0;
   scale: 2;
 }
+.main-content
+{
+  padding-top: 20vh;
+  text-align: center;
+}
+.main-content h1
+{
+  margin-top: 40px;
+  margin-bottom: 16px;
+  font-size: 40px;
+  color: #fcfbf8;
+}
+.main-content p
+{
+  font-weight: bold;
+  color: #fcfbf8a6;
+  font-size: 18px;
+}
+.main-content a
+{
+  font-size: 12px;
+  padding: 12px;
+  border-radius: 40px;
+  transition: all 0.3s ease-in-out;
+}
+.main-content a:hover
+{
+  background-color: #272725;
+}
+.main-content i
+{
+  transition: all 0.3s ease-in-out;
+}
+.main-content a:hover i
+{
+    translate: 4px;
+}
+.main-content a span:first-child
+{
+  background-color: #3b82f6;
+  padding: 4px 6px;
+  border-radius: 40px;
+}
+
+.input-container
+{
+  background-color: #272725;
+  width: 56vw;
+  height: 24vh;
+  border-radius: 24px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.input-container input
+{
+    width: 100%;
+    height: 28px;
+    background-color: #272725;
+    border: none;
+    outline: none;
+    color: white;
+
+}
+.input-container input::placeholder
+{
+  color: #e4e4e4;
+}
+.input-options
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.voice-svg svg
+{
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+.extra-options
+{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.input-options .add i
+{
+    height: 32px;
+    width: 32px;
+    font-weight: 500;
+    font-size:x-large;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    
+}
+/* IF we write the above css in hover it goes up so fixed shape first*/
+.input-options .add:hover i
+{
+  background-color:rgb(93, 91, 91);
+}
+.input-options .voice-svg 
+{
+   padding: 6px 6px 6px 6px;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.input-options .voice-svg:hover 
+{
+  background-color:rgb(93, 91, 91);
+  
+}
+.extra-options p
+{
+  height: 5vh;
+  width: 9vh;
+  font-size: 14px;
+  color: #e4e4e4;
+   border-radius: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.extra-options p:hover
+{
+   background-color:rgb(56, 55, 55);
+}
+.extra-options i
+{
+  height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(142, 142, 142);
+    transition: all 0.3s ease-in-out;
+    color: black;
+    cursor: not-allowed;
+}
+.extra-options i:hover
+{
+  background-color: #4a4a49;
+}
+.input-container input:focus
+{
+ 
+}
+
 .box
 {
   height: 100vh;
