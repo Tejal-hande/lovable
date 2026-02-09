@@ -3,17 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-header {
-  background-color: #181818;
-  display: flex;
-  justify-content: space-between;
-  height: 10vh;
-  align-items: center;
-  padding: 0 5vw;
-  cursor: pointer;
+a {
+  text-decoration: none;
+  color: #fcfbf8;
 }
-
 body {
   /* @font-face {
     font-family:lovable-font ;
@@ -22,9 +15,27 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: #fcfbf8;
+header {
+  background-color: #181818;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  align-items: center;
+  padding: 0 5vw;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  cursor: pointer;
+  
+  
+  
+}
+
+/* ------------header css start----------------------- */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .header-left p {
@@ -32,28 +43,26 @@ a {
   cursor: pointer;
 }
 
-.header-left {
-  display: flex;
-  gap: 22px;
-}
-
 .header-left a img {
   width: 140px;
-}
-
-nav {
-  display: flex;
-  gap: 22px;
-}
-
-nav p {
-  gap: 22px;
 }
 
 .header-left a img:hover {
   opacity: 0.8;
   /* opacity-->TRANSPARENCY of color / shade of color */
 }
+nav {
+  display: flex;
+  color: #fcfbf8;
+  gap: 22px;
+}
+
+nav p {
+  /* gap: 22px; */
+  cursor: pointer;
+}
+
+
 
 nav a:hover {
   color: #fcfbf8cc;
@@ -97,37 +106,41 @@ button {
 .get:hover {
   background-color: #bfbebb;
 }
-
-.resources {
-  height: 100px;
-  width: 200px;
-  position: absolute;
-  border-color: 1px solid #fcfbf8;
-  background-color: #181818;
-  top: 8vh;
-  gap: 8px;
-  flex-direction: column;
-  padding: 16px;
-  border-radius: 7px;
-  display: none;
-
+.resources-container
+{
+  position: relative;
 }
 
-.resources-container {
-  position: relative;
+.resources {
+  position: absolute;
+  background-color: #181818;
+  display: none;
+  top: 8vh;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 20px;
+  width: 200px;
+   border-color: 1px solid #f2f2eb66;
+  
+
 }
 
 .resources-container p:hover+.resources {
   display: flex;
+  flex-direction: column;
 }
 
-.resources-container p i {}
+.resources-container p i {
+  transition: rotate 150ms ease-in-out;
+}
 
 .resources-container p:hover i {
   rotate: 180deg;
 }
 
 /* -----------------------------header completed ------------------------------------ */
+
+/* ------------------------------------main css start------------------------------------------ */
 main
 {
     background-color: #1c1c1c;
@@ -312,3 +325,58 @@ main img
 {
   height: 100vh;
 }
+/* ------------------------------------main css stop------------------------------------------ */
+
+/* ---------------------------Discover css start--------------------------- */
+.discover
+{
+  background-color: #181818;
+}
+.discover-heading h2
+{
+  color: #fcfbf8;
+}
+.discover-heading p
+{
+  padding-top: 9px;
+  color: #bfbebb;
+  font-weight: bold;
+}
+.discover-template1
+{
+  padding-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+.discover-template1 .templ img
+{
+  width: 280px;
+  height: 170px;
+  border-radius:10px;
+  
+}
+.discover-template2
+{
+  padding-top: 70px;
+  display: flex;
+  gap: 20px;
+}
+.discover-template2 .templ img
+{
+  width: 278px;
+  height: 170px;
+  border-radius: 10px;
+  
+}
+.templ .caption h3
+{
+  font-size: 17px;
+  color: #fcfbf8;
+  font-weight: 500;
+}
+.templ .caption p
+{
+  font-size: 12px;
+  color: #bfbebb;
+}
+
