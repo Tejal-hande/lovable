@@ -350,8 +350,8 @@ main img
 }
 .discover-template1 .templ img
 {
-  width: 280px;
-  height: 170px;
+  width: 20vw;
+  height: 22vh;
   border-radius:10px;
   
 }
@@ -363,8 +363,8 @@ main img
 }
 .discover-template2 .templ img
 {
-  width: 278px;
-  height: 170px;
+  width: 20vw;
+  height: 22vh;
   border-radius: 10px;
   
 }
@@ -380,3 +380,35 @@ main img
   color: #bfbebb;
 }
 
+/* -------------responsive code --------- */
+ @media (width<=1024px)
+    {
+        .header-left nav{
+          display: none;
+        }
+        main img {
+          top: 50%;
+          scale: 3;
+        }
+    }
+
+    .header-right i
+    {
+      color: white;
+    }
+    @media (width<= 768px)
+    {
+        .login
+        {
+          display: none;
+        }
+         .header-right i
+          {
+        display: inline;
+      }
+        .input-container
+      {
+         width: 80vw;
+      }
+    }
+ 
